@@ -5356,7 +5356,7 @@ RESPOND ONLY WITH VALID JSON. NO OTHER TEXT.`;
             
             // Special function for orchestration requests (no display, just return response)
             async function sendOrchestrationRequest(prompt, retries = 2) {
-                const apiKey = "AIzaSyBYZ7rmOfPXDZaJAcCq62QqPA1CXftXFFs";
+                const apiKey = "AIzaSyBXKcOpMJT9pIZbC0Qal0CNjijhL5omAu4";
                 const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-09-2025:generateContent?key=${apiKey}`;
 
                 const payload = {
@@ -5396,7 +5396,7 @@ RESPOND ONLY WITH VALID JSON. NO OTHER TEXT.`;
             }
             
             async function sendMessageToAgent(message, agentId, retries = 3, delay = 1000) {
-                const apiKey = "AIzaSyBYZ7rmOfPXDZaJAcCq62QqPA1CXftXFFs";
+                const apiKey = "AIzaSyBXKcOpMJT9pIZbC0Qal0CNjijhL5omAu4";
                 const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-09-2025:generateContent?key=${apiKey}`;
 
                 const persona = personaData.find(p => p.id === agentId);
@@ -5554,7 +5554,7 @@ RESPOND ONLY WITH VALID JSON. NO OTHER TEXT.`;
             
             // New function for agent discussion with separate context
             async function sendMessageToAgentDiscussion(prompt, agentId, previousContext = [], retries = 3, delay = 1000) {
-                const apiKey = "AIzaSyBYZ7rmOfPXDZaJAcCq62QqPA1CXftXFFs";
+                const apiKey = "AIzaSyBXKcOpMJT9pIZbC0Qal0CNjijhL5omAu4";
                 const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-09-2025:generateContent?key=${apiKey}`;
 
                 const persona = personaData.find(p => p.id === agentId);
@@ -6501,7 +6501,7 @@ RESPOND ONLY WITH VALID JSON. NO OTHER TEXT.`;
             const RSS_CACHE_DURATION = 30 * 60 * 1000; // 30 minutes (increased to reduce API calls)
             
             async function fetchNewsForTopic(topicId, usedArticleUrls = []) {
-                const geminiApiKey = "AIzaSyBYZ7rmOfPXDZaJAcCq62QqPA1CXftXFFs";
+                const geminiApiKey = "AIzaSyBXKcOpMJT9pIZbC0Qal0CNjijhL5omAu4";
                 const topicName = topicMapping[topicId] || 'HRSD initiatives';
                 
                 try {
